@@ -12,4 +12,4 @@ var invisibleOptions = {
   strokeOpacity: 0
 }
 
-var initZoom = 6;
+var initZoom = 3;

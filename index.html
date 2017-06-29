@@ -20,6 +20,7 @@
         </select>
         since
         <select class='custom-select form-control year-select'>
+          <option value='any'>Beginning of Time</option>
           <option value='2017'>2017</option>
           <option value='2016'>2016</option>
           <option value='2015'>2015</option>
@@ -67,7 +68,7 @@
         var props = sublayer.feature.properties
         var _includeYear = false;
         var _includeType = false;
-        var _includeDisease = false
+        var _includeDisease = false;
         if (filter.year != 'any'){
           if (+new Date(props.date).getFullYear() >= +filter.year){
             _includeYear = true
